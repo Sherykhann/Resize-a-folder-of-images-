@@ -1,4 +1,4 @@
-#With this code you will simply resize all the images in the folder 
+#With this code you will simply resize all the images in the folder either increase the size or decrease the size 
 from PIL import Image
 import os
 
