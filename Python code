@@ -1,0 +1,29 @@
+#With this code you will simply resize all the images in the folder 
+from PIL import Image
+import os
+
+
+
+
+DIR = 'C:/Users/Shehryar khan/Documents/Technical/AI/Datasets/ChestXRay2017/chest_xray/train48/NORMAL'
+#Count the number of images in the test folder
+list = os.listdir(DIR)
+print (list)# dir is your directory path
+number_files = len(list)
+print(number_files)
+
+# Resize the image size in the
+
+for image_file in os.listdir(DIR):
+    f_path= DIR + "/" + image_file
+    im1=Image.open(f_path)
+    print("done")
+    im2=im1.resize((48,48))
+    im2.save(f_path)
+
+#im3=Image.open(DIR + '/IM-0001-0001.jpeg')
+#j=im3.size
+#print(j)
+Message="Good Job"
+
+print(Message*3)
